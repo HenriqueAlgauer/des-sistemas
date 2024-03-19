@@ -5,10 +5,10 @@
 • Se média >= 6,0 e média < 9,9 – Aluno aprovado;
 • Se média igual a 10,0 – Aluno aprovado sem dificuldades;
 • Por fim, informar o tipo da variável referente a média.
-2. Desenvolva um código onde deve ser informado os 3 lados de um triângulo. O código deve informar se otriângulo é equilátero, isósceles ou escaleno. (Dica: Se a soma de dois lados for maior que o terceiro lado, tem-se um triângulo).
-3. Desenvolva um código onde deve ser informado um número, na sequência tal código deve mostrar na tela setal número é par ou ímpar. Utilize as estruturas condicionais IF, ELSE, ELSEIF, SWITCH e MATCHindividualmente.
-4. Devido ao ano eleitoral desenvolva um código que diga ao usuário se ele está apto a votar, tendo comopremissa a sua idade. Ressalta-se que o ano atual deve ser obtido de maneira automática, ou seja, o usuárionão deve informar o ano atual, somente o ano de seu nascimento.
-5. Desenvolva um código onde seja informado um número com o qual deve-se fazer operações matemáticas aescolha do usuário. Os resultados que devem ser obtidos são o dobro de um número, ou o cubo de um númeroou a raiz quadrada de um número. Ressalta-se que deve ser utilizadas as estruturas SWITCH e MATCH. Quaisas principais diferenças entre as estruturas de decisão? -->
+
+
+
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 03</title>
+    <title>exe 01</title>
 </head>
 
 <body>
