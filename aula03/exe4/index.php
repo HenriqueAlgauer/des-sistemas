@@ -37,6 +37,8 @@
             echo "Não pode votar";
         }
     }
+
+    // Criar 
     ?>
 
 </body>
