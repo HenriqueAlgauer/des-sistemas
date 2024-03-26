@@ -37,7 +37,7 @@
             echo "Não pode votar";
         }
     }
-
+    $registro = [["Nome" => "Jao", "Idade" => 14 ], ["Nome" => "Jao" , "Idade" => 83]];
     // Criar 
     ?>
 
