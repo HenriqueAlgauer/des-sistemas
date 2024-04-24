@@ -8,10 +8,14 @@
             header('Location: clientes.php');
         }
     }
+
+    if(isset($_GET['erro'])){
+        $erro = "É necessário logar para acessar o sistema";
+    }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -20,6 +24,13 @@
 </head>
 
 <body>
+
+    <div style="background-color: coral; margin: 10px">
+        <?php 
+            echo $erro ?? '';
+        ?>
+    </div>
+
     <form action="" method="post">
         <label for="user">Usuário </label>
         <input type="text" name="user">
