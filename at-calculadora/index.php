@@ -7,83 +7,86 @@
     <title>Calculadora</title>
 </head>
 <style>
-    body {
-        text-align: center;
-        background: rgb(0, 18, 36);
-        background: linear-gradient(90deg, rgba(0, 18, 36, 1) 0%, rgba(107, 9, 121, 1) 53%, rgba(92, 0, 255, 1) 100%);
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
+body {
+    text-align: center;
+    background: rgb(0, 18, 36);
+    background: linear-gradient(90deg, rgba(0, 18, 36, 1) 0%, rgba(107, 9, 121, 1) 53%, rgba(92, 0, 255, 1) 100%);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-    form {
-        margin: 30px auto;
-        padding: 20px;
-        width: 300px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.15);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(7.3px);
-        -webkit-backdrop-filter: blur(7.3px);
-    }
+form {
+    margin: 30px auto;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+}
 
-    .div-form{
-        display: flex;
-    }
+.div-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-    .op1{
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-    }
-    .op2{
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-    }
-    
-    .op3{
-        display: flex;
-    }
+.op1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
 
-    input[type="text"],
-    .button {
-        width: calc(100% - 22px);
-        padding: 10px;
-        margin-top: 10px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+.op2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
 
-    .button {
-        background-color: #f8f8f8;
-        color: #333;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
+.op3 {
+    display: flex;
+}
 
-    .button:hover {
-        background-color: #e7e7e7;
-    }
+input[type="text"],
+.button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-    #result {
-        color: #d6005f;
-        font-size: 20px;
-        margin-top: 20px;
-    }
+.button {
+    background-color: #f8f8f8;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        background-color: #f9f9f9;
-        border-top: 1px solid #e1e1e1;
-    }
+.button:hover {
+    background-color: #e7e7e7;
+}
+
+#result {
+    color: #d6005f;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e1e1e1;
+}
 </style>
 
 <body>
@@ -148,12 +151,13 @@
                 <button type="submit" name="operacao" value="mult" class="button">Multiplicação</button>
                 <button type="submit" name="operacao" value="div" class="button">Divisão</button>
             </div>
-            <div class="op3">
-                <button type="submit" name="operacao" value="exp" class="button">Exponenciação</button>
-                <button type="submit" name="operacao" value="raiz" class="button">Raiz Quadrada</button>
-                <button type="submit" name="operacao" value="fat" class="button">Fatorial</button>
-            </div>
         </div>
+        <div class="op3">
+            <button type="submit" name="operacao" value="exp" class="button">Exponenciação</button>
+            <button type="submit" name="operacao" value="raiz" class="button">Raiz Quadrada</button>
+            <button type="submit" name="operacao" value="fat" class="button">Fatorial</button>
+        </div>
+
 
         <div id="result"><?php echo $mensagem; ?></div>
     </form>
