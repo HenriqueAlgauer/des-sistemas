@@ -16,7 +16,13 @@
             '".$dados['estadoCivil']."', '".$dados['cpf']."', '".$dados['profissao']."' )";
 
             $cadUsuario = $pdo->prepare($queryUsu);
-            
+            $cadUsuario->execute();
+
+            if($cadUsuario->rowCount()){
+                echo "<p>Usuario cadastrado com sucesso</p>";
+            }else{
+                echo "<p>Deu bigode</p>";
+            }
         }
     ?>
 
