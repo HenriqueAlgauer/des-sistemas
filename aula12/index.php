@@ -1,17 +1,11 @@
 <?php 
-    class Conexao{
-        public static function conectar(){
-            try{
-                $conn = new PDO("mysql:host=localhost;dbname=teste", "root", "1234");
-                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                return $conn;
+    $url = strtoupper($_GET['url']);
 
-            }catch(PDOException $erro){
-                echo "ERRO => " . $erro->getMessage();
-                return null;
-
-            }
-        }
+    if($url == "CADASTRO"){
+        require_once("view/cadastrar.php");
+    }elseif($url=="CADASTROUSUARIO"){
+        require_once("controller/usuarioController.php");
+        $controle = new usuarioController();
+        $controle->processa("C");
     }
-
 ?>

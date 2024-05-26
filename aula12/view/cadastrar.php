@@ -34,6 +34,8 @@
         <label for="cpf">CPF</label>
         <input type="text" name="cpf" id="cpf" placeholder="CPF">
         <br><br>
+
+        <button type="submit">Enviar</button>
     </form>
 </body>
 
